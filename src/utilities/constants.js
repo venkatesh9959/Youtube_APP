@@ -2,7 +2,7 @@ const YOUTUBE_API_KEY = "AIzaSyCFH4w82Vv0GlDvMEk3mp57XPPYout9Hn4";
 
 
 // Endpoint for autocomplete search suggestions
-export const YOUTUBE_AUTOCOMPLETE_API = `http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=`;
+export const YOUTUBE_AUTOCOMPLETE_API = `https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=`;
 
 // Endpoint for fetching popular videos
 export const YOUTUBE_POPULAR_VIDEOS_API =
