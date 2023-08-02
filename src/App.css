@@ -27,7 +27,6 @@ a {
 .header-main {
   display: flex;
   flex-direction: column;
- 
 }
 
 .suggestions {
@@ -161,7 +160,7 @@ a {
 .user_icon {
   margin: 0px 10px;
 }
-.player{
+.player {
   margin-top: 50px;
 }
 .sidbar {
@@ -350,14 +349,14 @@ li {
   font-size: 14px;
 }
 .comments p {
-  margin-right: 4px;
+  margin-right: 6px;
   color: black;
   margin-bottom: 2px;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 8;
+  font-size: 13px;
   font-weight: 500;
 }
 .firstName {
@@ -398,8 +397,6 @@ li {
   font-weight: 600;
   overflow: hidden;
   -webkit-line-clamp: 2;
-  display: box;
-  display: -webkit-box;
   -webkit-box-orient: vertical;
   white-space: normal;
   margin: 12px 0px 10px 0px;
