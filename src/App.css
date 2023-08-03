@@ -7,11 +7,8 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
 }
-.App {
+.App{
   margin-top: 50px;
-}
-a {
-  text-decoration: none;
 }
 .header {
   display: flex;
@@ -24,6 +21,10 @@ a {
   background-color: white;
   height: 60px;
 }
+a {
+  text-decoration: none;
+}
+
 .header-main {
   display: flex;
   flex-direction: column;
@@ -33,7 +34,7 @@ a {
   background-color: white;
   width: 550px;
   position: fixed;
-  left: 470px;
+  left: 318px;
   border: 2px solid rgb(223, 219, 219);
   border-radius: 10px;
   z-index: 1;
@@ -48,7 +49,9 @@ a {
   background-color: rgb(169, 166, 166);
 }
 .heade-Logo-section {
-  height: inherit;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
 }
 .heade-Logo-section button {
   border: none;
@@ -68,12 +71,16 @@ a {
   text-align: center;
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .Youtube_img {
   width: 100px;
+  height: 60px;
 }
+
+
+
 
 .col-1 {
   width: 8.33%;
@@ -111,7 +118,9 @@ a {
 .col-12 {
   width: 100%;
 }
-
+.search{
+  display: flex;
+}
 .search input {
   width: 520px;
   padding: 0px 4px 0px 16px;
@@ -121,6 +130,7 @@ a {
   outline: none;
   border: 1px solid #d3d3d3;
   height: 40px;
+
 }
 
 .button-text {
@@ -134,6 +144,7 @@ a {
   height: 41px;
   margin: 0;
   background-color: white;
+
 }
 
 .button-text:hover {
@@ -156,6 +167,7 @@ a {
   margin-left: 120px;
   background-color: white;
   cursor: pointer;
+
 }
 .user_icon {
   margin: 0px 10px;
@@ -169,22 +181,11 @@ a {
   text-align: left;
   overflow: scroll;
   height: 600px;
-  width: 16.66%; /* Default width for larger screens */
+  width: 16.66%;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  .col-2 {
-    width: 25%; /* Adjust width for smaller screens */
-  }
-}
 
-/* Additional responsive styles for even smaller screens if needed */
-@media (max-width: 576px) {
-  .col-2 {
-    width: 50%; /* Adjust width for even smaller screens */
-  }
-}
+
 .menu-icone {
   cursor: pointer;
 }
@@ -418,7 +419,7 @@ li {
 }
 .channel-img {
   width: 50%;
-  /* height: 50px; */
+
   border-radius: 50%;
 }
 .channel-subscribe {
@@ -522,7 +523,6 @@ li {
 }
 .chatMessage {
   font-size: 13px;
-  /* margin-right: -35px; */
   padding-left: 29px;
   color: #11021f;
   margin: 0px 2px;
@@ -530,7 +530,7 @@ li {
 .Messages {
   position: absolute;
   top: 639px;
-  left: 974px;
+  left: 1047px;
 }
 .inputMessage {
   padding: 0px 4px 0px 16px;
@@ -573,4 +573,46 @@ li {
   color: cadetblue;
   margin: 137px 34px;
   cursor: pointer;
+}
+
+@media screen  and (max-width: 767px){
+.col-3{
+  width: 10%;
+}
+.heade-Logo-section .menu-icon {
+  font-size: 10px;
+}
+.heade-Logo-section .menu-icon:hover {
+  background-color: #c6c6c6;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+.Youtube_img {
+  width: 60px;
+  height: 60px;
+
+} 
+
+.search input{
+  width: 151px;
+  margin-left: 65px;
+  height: 35px;
+}
+.button-text{
+  height: 36px;
+}
+.user{
+  display: none;
+}
+.suggestions{
+  width: 208px;
+  left: 90px;
+}
+.sidbar{
+width: 100%;
+}
+.main-menu{
+margin-left: 0px;
+}
 }

@@ -24,6 +24,7 @@ const LiveChat = () => {
       lastChat: handlerMessage,
     };
     dispatch(addMessageToChat(MessageObj));
+    setHandleMessage('')
   };
   useEffect(() => {
     const data = allComment;
@@ -79,6 +80,7 @@ const LiveChat = () => {
             onChange={(e) => setHandleMessage(e.target.value)}
             className="inputMessage"
             placeholder="Write here"
+            value={handlerMessage}
           />
           <button onClick={() => handleSubmit()}>Submit</button>
         </div>

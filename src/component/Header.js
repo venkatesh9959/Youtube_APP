@@ -13,7 +13,8 @@ const Header = () => {
   const [showSuggestions, setShowSuggestions] = useState(true);
   const dispatch = useDispatch();
 
-  const handleToggle = () => {
+  const handleToggle = (e) => {
+    console.log(e)
     dispatch(toggleChange());
   };
 
@@ -41,8 +42,8 @@ const Header = () => {
     <div className="header-main">
       <div className="header">
         <div className="col-3 heade-Logo-section">
-          <button onClick={() => handleToggle()}>
-            <CiMenuBurger className="menu-icon" />
+          <button>
+            <CiMenuBurger className="menu-icon"  onClick={(e) => handleToggle(e)} />
           </button>
           <Link to="/">
             <img
@@ -60,7 +61,7 @@ const Header = () => {
             value={searchQuery}
             onChange={(e) => handleSearch(e)}
             onFocus={() => setShowSuggestions(true)}
-            onBlur={() => setShowSuggestions(false)}
+          
           />
           <button className="button-text">
             <CiSearch />
@@ -75,6 +76,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
+      
       {showSuggestions && suggestionslist?.length > 0 && (
         <div className="suggestions">
           {suggestionslist.map((element, index) => (
