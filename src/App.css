@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
 }
-.App{
+.App {
   margin-top: 50px;
 }
 .header {
@@ -79,9 +79,6 @@ a {
   height: 60px;
 }
 
-
-
-
 .col-1 {
   width: 8.33%;
 }
@@ -118,7 +115,7 @@ a {
 .col-12 {
   width: 100%;
 }
-.search{
+.search {
   display: flex;
 }
 .search input {
@@ -130,7 +127,6 @@ a {
   outline: none;
   border: 1px solid #d3d3d3;
   height: 40px;
-
 }
 
 .button-text {
@@ -144,7 +140,6 @@ a {
   height: 41px;
   margin: 0;
   background-color: white;
-
 }
 
 .button-text:hover {
@@ -167,7 +162,6 @@ a {
   margin-left: 120px;
   background-color: white;
   cursor: pointer;
-
 }
 .user_icon {
   margin: 0px 10px;
@@ -183,8 +177,6 @@ a {
   height: 600px;
   width: 16.66%;
 }
-
-
 
 .menu-icone {
   cursor: pointer;
@@ -323,6 +315,8 @@ li {
   margin: 5px 20px !important;
 }
 .watchPage {
+  display: flex;
+  flex-direction: column;
   margin-left: 100px;
 }
 .player iframe {
@@ -574,45 +568,103 @@ li {
   margin: 137px 34px;
   cursor: pointer;
 }
+.nestedComments{
+  margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+  .col-3 {
+    width: 10%;
+  }
+  .heade-Logo-section .menu-icon {
+    font-size: 10px;
+  }
+  .heade-Logo-section .menu-icon:hover {
+    background-color: #c6c6c6;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .Youtube_img {
+    width: 60px;
+    height: 60px;
+  }
+  .search input {
+    width: 151px;
+    margin-left: 65px;
+    height: 35px;
+  }
+  .button-text {
+    height: 36px;
+  }
+  .user {
+    display: none;
+  }
+  .suggestions {
+    width: 208px;
+    left: 90px;
+  }
+  .sidbar {
+    width: 100%;
+  }
+  .main-menu {
+    margin-left: 0px;
+  }
+  .butten-Bar {
+    display: none;
+  }
+  .wrapper {
+    padding: 0px;
+  }
+  .watchPage {
+    margin-top: 50px;
+    margin-left: 10px;
 
-@media screen  and (max-width: 767px){
-.col-3{
-  width: 10%;
 }
-.heade-Logo-section .menu-icon {
-  font-size: 10px;
+.player {
+  margin-top: 14px;
 }
-.heade-Logo-section .menu-icon:hover {
-  background-color: #c6c6c6;
-  padding: 10px;
-  border-radius: 50%;
-  text-align: center;
-}
-.Youtube_img {
-  width: 60px;
-  height: 60px;
+.player iframe {
+  width: 350px;
+  height: 200px;
 
-} 
+}
+.comment-footer {
+  width: 350px;
+}
+.channel-heading-text{
+width: 50%;
+}
+.channel-heading-button{
+  width: 50%;
 
-.search input{
-  width: 151px;
-  margin-left: 65px;
-  height: 35px;
 }
-.button-text{
-  height: 36px;
+.channel-img{
+  width: 100%;
 }
-.user{
-  display: none;
+.comments-section{
+  width: 384px;
 }
-.suggestions{
-  width: 208px;
-  left: 90px;
+.comment-footer h1 {
+  font-size: 12px;
 }
-.sidbar{
-width: 100%;
+.channel-heading-button button{
+  padding: 0px;
 }
-.main-menu{
-margin-left: 0px;
+.decription{
+  width: 319px;
+}
+.comments{
+  width: 300px;
+}
+.nestedComments{
+  width: 300px;
+}
+.Live_Page{
+  position: absolute;
+    top: -87px;
+    left: -23px;
+}
+.Live_Page button {
+padding: 20px 25px;
 }
 }

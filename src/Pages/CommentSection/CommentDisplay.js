@@ -21,7 +21,7 @@ const CommentDisplay = ({ id }) => {
       const response = await fetch(YOUTUBE_POPULAR_VIDEOS_API);
       const json = await response.json();
       const channel = json?.items.find((item) => item?.id === id);
-
+       console.log(channel,"dtata")
       if (channel) {
         setChannelData(channel);
         await getChannelLogo(channel?.snippet?.channelId);
@@ -68,7 +68,7 @@ const CommentDisplay = ({ id }) => {
           comments.map((comment, index) => (
             <div key={index}>
               <UsersComments data={comment} index={index} />
-              <div style={{ marginLeft: "50px" }}>
+              <div style={{ marginLeft: "50px" }} className="nestedComments">
                 <RecursiveCommentRenderer comments={comment?.replies?.comments} />
               </div>
             </div>
@@ -82,10 +82,10 @@ const CommentDisplay = ({ id }) => {
     likes > 1000000
       ? Math.floor(likes / 1000000) + "m"
       : Math.floor(likes / 10000) + "k";
-
+console.log(channelData,"channel Data")
   return (
     <div className="comment-footer">
-      <h1>{channelData?.title}</h1>
+      <h1>{channelData?.snippet?.title}</h1>
       <div className="channel-heading">
         <div className="channel-heading-text">
           <button className="channel-logo">

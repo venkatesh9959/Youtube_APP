@@ -6,7 +6,7 @@ export const YOUTUBE_AUTOCOMPLETE_API = `http://suggestqueries.google.com/comple
 
 // Endpoint for fetching popular videos
 export const YOUTUBE_POPULAR_VIDEOS_API =
-  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&key=" +
+  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
   YOUTUBE_API_KEY;
 
 // Endpoint for fetching comments for a video

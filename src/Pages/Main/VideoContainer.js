@@ -8,11 +8,12 @@ import VideoList from "./VideoList";
 const VideoContainer = () => {
   const [popularVideos, setPopularVideos] = useState([]);
   const fetchPopularVideos = async () => {
+    
     try {
       const response = await fetch(YOUTUBE_POPULAR_VIDEOS_API);
 
       const data = await response.json();
-      setPopularVideos(data?.items);
+     setPopularVideos(data?.items);
     } catch (error) {
       setPopularVideos(IndiaPopularVideos);
       console.error("Error fetching videos:", error.message);
