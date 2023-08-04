@@ -568,7 +568,7 @@ li {
   margin: 137px 34px;
   cursor: pointer;
 }
-.nestedComments{
+.nestedComments {
   margin-left: 50px;
 }
 @media screen and (max-width: 767px) {
@@ -618,53 +618,60 @@ li {
   .watchPage {
     margin-top: 50px;
     margin-left: 10px;
-
-}
-.player {
-  margin-top: 14px;
-}
-.player iframe {
-  width: 350px;
-  height: 200px;
-
-}
-.comment-footer {
-  width: 350px;
-}
-.channel-heading-text{
-width: 50%;
-}
-.channel-heading-button{
-  width: 50%;
-
-}
-.channel-img{
-  width: 100%;
-}
-.comments-section{
-  width: 384px;
-}
-.comment-footer h1 {
-  font-size: 12px;
-}
-.channel-heading-button button{
-  padding: 0px;
-}
-.decription{
-  width: 319px;
-}
-.comments{
-  width: 300px;
-}
-.nestedComments{
-  width: 300px;
-}
-.Live_Page{
-  position: absolute;
+  }
+  .player {
+    margin-top: 14px;
+  }
+  .player iframe {
+    width: 350px;
+    height: 200px;
+  }
+  .comment-footer {
+    width: 350px;
+  }
+  .channel-heading-text {
+    width: 50%;
+  }
+  .channel-heading-button {
+    width: 50%;
+  }
+  .channel-img {
+    width: 100%;
+  }
+  .comments-section {
+    width: 384px;
+  }
+  .comment-footer h1 {
+    font-size: 12px;
+  }
+  .channel-heading-button button {
+    padding: 0px;
+  }
+  .decription {
+    width: 319px;
+  }
+  .comments {
+    width: 300px;
+  }
+  .nestedComments {
+    width: 300px;
+  }
+  .Live_Page {
+    position: absolute;
     top: -87px;
     left: -23px;
-}
-.Live_Page button {
-padding: 20px 25px;
-}
+  }
+  .Live_Page button {
+    padding: 20px 25px;
+  }
+  .live-chat {
+    width: 359px;
+    margin-top: 229px;
+    margin-left: -346px;
+  }
+  .Messages {
+    position: absolute;
+    top: 892px;
+    left: 0px;
+  }
 }
